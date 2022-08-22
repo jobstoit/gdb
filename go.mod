@@ -1,10 +1,10 @@
-module github.com/myceliums/gdb
+module github.com/jobstoit/gdb
 
 go 1.17
 
 require (
+	git.fuyu.moe/Fuyu/assert v0.2.1
 	github.com/lib/pq v1.10.3
-	github.com/myceliums/assert v0.0.0-20210908203800-63c43bb032a3
 	gopkg.in/yaml.v2 v2.4.0
 )
 

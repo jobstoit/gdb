@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/myceliums/assert"
-	"github.com/myceliums/gdb/dialect"
+	"git.fuyu.moe/Fuyu/assert"
+	"github.com/jobstoit/gdb/dialect"
 )
 
 func TestInitialSQL(t *testing.T) {

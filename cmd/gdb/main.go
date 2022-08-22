@@ -7,8 +7,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/myceliums/gdb/model"
-	"github.com/myceliums/gdb/templater"
+	"github.com/jobstoit/gdb/model"
+	"github.com/jobstoit/gdb/templater"
 )
 
 type Config struct {

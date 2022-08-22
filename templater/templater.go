@@ -5,7 +5,7 @@ import (
 	"io"
 	"text/template"
 
-	"github.com/myceliums/gdb/model"
+	"github.com/jobstoit/gdb/model"
 )
 
 //go:embed main.tmpl

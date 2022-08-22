@@ -6,7 +6,7 @@ import (
 	"log"
 	"strings"
 
-	"github.com/myceliums/gdb/dialect"
+	"github.com/jobstoit/gdb/dialect"
 )
 
 // Migrate runs the configured migration model, when there's a differential between

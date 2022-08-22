@@ -5,8 +5,8 @@ import (
 
 	_ "embed"
 
+	"git.fuyu.moe/Fuyu/assert"
 	_ "github.com/lib/pq"
-	"github.com/myceliums/assert"
 )
 
 //go:embed testmodel.yml
