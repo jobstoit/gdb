@@ -27,16 +27,19 @@ func newCursorContext(ctx context.Context, dialect dialect.Dialect, qr Querier, 
 
 // Cursor is a Query statment that holds its position on a particular row of the given results
 type Cursor struct {
-	key   string
-	dia   dialect.Dialect
-	field Field
-	qr    Querier
+	key      string
+	dia      dialect.Dialect
+	field    Field
+	qr       Querier
+	nextSets []interface{}
 }
 
+// Scan returns the next set of values
 func (x Cursor) Scan(args ...interface{}) error {
 	return x.qr.QueryRow(x.dia.CursorSelect(x.key), x.field.Args()...).Scan(args...)
 }
 
+// Close closes the cursor
 func (x Cursor) Close() error {
 	_, err := x.qr.Exec(x.dia.CursorClose(x.key))
 	return err
